@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReWear - Community Clothing Exchange</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#home" class="logo">
+                    <i class="fas fa-recycle"></i>
+                    ReWear
+                </a>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#browse">Browse</a></li>
+                    <li><a href="#start-swapping">Start Swapping</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#admin">Admin</a></li>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#add-item">List Item</a></li>
+                </ul>
+                <div class="user-actions">
+                    <a href="#login" class="btn-outline">Login</a>
+                    <a href="#signup" class="btn">Sign Up</a>
+                </div>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                    <span>Sarah</span>
+                    <div class="dropdown-menu">
+                        <a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="#profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#settings"><i class="fas fa-cog"></i> Settings</a>
+                        <a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Swap Clothes, Save the Planet</h1>
+            <p>Join our community clothing exchange platform to give your unused garments a new life and discover unique fashion finds.</p>
+            <div class="cta-buttons">
+                <a href="#start-swapping" class="btn">Start Swapping</a>
+                <a href="#browse" class="btn-outline">Browse Items</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How ReWear Works Section (from index.html) -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>How ReWear Works</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>List Your Items</h3>
+                    <p>Upload photos and details of clothing you no longer wear but is still in good condition.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Swap or Redeem</h3>
+                    <p>Find items you love and request a direct swap or redeem using your earned points.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-truck"></i>
+                    </div>
+                    <h3>Arrange Exchange</h3>
+                    <p>Connect with other members to arrange local meetups or shipping for your swaps.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Items Carousel (from index.html) -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Featured Items</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                            </div>
+                            <div class="item-info">
+                                <h3>Vintage Denim Jacket</h3>
+                                <div class="item-meta">
+                                    <span>Size: M</span>
+                                    <span>Condition: Excellent</span>
+                                </div>
+                                <a href="#item-detail" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Summer Dress">
+                            </div>
+                            <div class="item-info">
+                                <h3>Floral Summer Dress</h3>
+                                <div class="item-meta">
+                                    <span>Size: S</span>
+                                    <span>Condition: Like New</span>
+                                </div>
+                                <a href="#item-detail" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Leather Boots">
+                            </div>
+                            <div class="item-info">
+                                <h3>Leather Ankle Boots</h3>
+                                <div class="item-meta">
+                                    <span>Size: 8</span>
+                                    <span>Condition: Good</span>
+                                </div>
+                                <a href="#item-detail" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <div class="carousel-dot active"></div>
+                    <div class="carousel-dot"></div>
+                    <div class="carousel-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Browse Content -->
+    <section id="browse" class="browse-header">
+        <div class="container">
+            <h1>Browse Available Items</h1>
+            <p>Find clothing you love and give it a new home through swapping or points redemption.</p>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Search and Filter -->
+        <div class="search-filter">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for items...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="filter-dropdown">
+                <button class="filter-btn">
+                    Filter Items <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Tops
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Bottoms
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Dresses
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Outerwear
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Shoes
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Accessories
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Size</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> XS
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> S
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> M
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> L
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> XL
+                        </label>
+                    </div>
+                    <div class="filter-group">
+                        <h4>Condition</h4>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> New
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Excellent
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Good
+                        </label>
+                        <label class="filter-checkbox">
+                            <input type="checkbox" checked> Fair
+                        </label>
+                    </div>
+                    <button class="btn" style="width: 100%;">Apply Filters</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Items Grid -->
+        <div class="items-grid">
+            <!-- Item 1 -->
+            <div class="item-card">
+                <a href="#item-detail">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                    </div>
+                    <div class="item-info">
+                        <h3>Vintage Denim Jacket</h3>
+                        <div class="item-meta">
+                            <span>Size: M</span>
+                            <span>Condition: Excellent</span>
+                        </div>
+                        <div class="item-points">150 points</div>
+                        <button class="btn" style="width: 100%;">View Details</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="item-card">
+                <a href="#item-detail">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Summer Dress">
+                    </div>
+                    <div class="item-info">
+                        <h3>Floral Summer Dress</h3>
+                        <div class="item-meta">
+                            <span>Size: S</span>
+                            <span>Condition: Like New</span>
+                        </div>
+                        <div class="item-points">200 points</div>
+                        <button class="btn" style="width: 100%;">View Details</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="item-card">
+                <a href="#item-detail">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Leather Boots">
+                    </div>
+                    <div class="item-info">
+                        <h3>Leather Ankle Boots</h3>
+                        <div class="item-meta">
+                            <span>Size: 8</span>
+                            <span>Condition: Good</span>
+                        </div>
+                        <div class="item-points">250 points</div>
+                        <button class="btn" style="width: 100%;">View Details</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="item-card">
+                <a href="#item-detail">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="White Shirt">
+                    </div>
+                    <div class="item-info">
+                        <h3>Classic White Shirt</h3>
+                        <div class="item-meta">
+                            <span>Size: L</span>
+                            <span>Condition: Excellent</span>
+                        </div>
+                        <div class="item-points">120 points</div>
+                        <button class="btn" style="width: 100%;">View Details</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="item-card">
+                <a href="#item-detail">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Black Jeans">
+                    </div>
+                    <div class="item-info">
+                        <h3>Slim Black Jeans</h3>
+                        <div class="item-meta">
+                            <span>Size: 32</span>
+                            <span>Condition: Good</span>
+                        </div>
+                        <div class="item-points">180 points</div>
+                        <button class="btn" style="width: 100%;">View Details</button>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="item-card">
+                <a href="#item-detail">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Wool Scarf">
+                    </div>
+                    <div class="item-info">
+                        <h3>Wool Winter Scarf</h3>
+                        <div class="item-meta">
+                            <span>One Size</span>
+                            <span>Condition: New</span>
+                        </div>
+                        <div class="item-points">90 points</div>
+                        <button class="btn" style="width: 100%;">View Details</button>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <a href="#"><i class="fas fa-chevron-left"></i></a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#"><i class="fas fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Start Swapping Section -->
+    <section id="start-swapping" class="swap-hero">
+        <div class="container">
+            <h1>Start Swapping Today</h1>
+            <p>Join our community of sustainable fashion enthusiasts and give your clothes a second life.</p>
+            <a href="#signup" class="btn">Create Free Account</a>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- How It Works (from start-swapping.html) -->
+        <h2 style="text-align: center; margin-bottom: 40px; color: var(--dark-color);">How ReWear Works</h2>
+        <div class="swap-steps">
+            <div class="step-card">
+                <div class="step-number">1</div>
+                <h3>List Your Items</h3>
+                <p>Upload photos and details of clothing you no longer wear but is still in good condition.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">2</div>
+                <h3>Find Items You Love</h3>
+                <p>Browse our community listings and discover unique pieces that match your style.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-number">3</div>
+                <h3>Swap or Redeem</h3>
+                <p>Request a direct swap with another member or redeem items using your earned points.</p>
+            </div>
+        </div>
+
+        <!-- Swap Options (from start-swapping.html) -->
+        <h2 style="text-align: center; margin-bottom: 40px; color: var(--dark-color);">Swap Options</h2>
+        <div class="swap-options">
+            <div class="option-card">
+                <div class="option-image">
+                    <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Direct Swap">
+                </div>
+                <div class="option-content">
+                    <h2>Direct Swap</h2>
+                    <ul>
+                        <li>Find an item you want and propose a swap with one of your listed items</li>
+                        <li>The other member can accept, decline, or counter your offer</li>
+                        <li>No points involved - perfect 1:1 exchange</li>
+                        <li>Great for items of similar value</li>
+                    </ul>
+                    <a href="#browse" class="btn">Browse Items to Swap</a>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-image">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Points Redemption">
+                </div>
+                <div class="option-content">
+                    <h2>Points Redemption</h2>
+                    <ul>
+                        <li>Earn points when someone selects your items for swapping</li>
+                        <li>Redeem points for any available item in the community</li>
+                        <li>Flexible system for items of different values</li>
+                        <li>No need to find a perfect 1:1 match</li>
+                    </ul>
+                    <a href="#how-it-works" class="btn">Learn About Points</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials (from start-swapping.html) -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 40px; color: var(--dark-color);">What Our Members Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "I've completely refreshed my wardrobe without spending a dime! ReWear makes it so easy to find great pieces and pass on clothes I no longer wear."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+                        <div class="author-info">
+                            <h4>Sarah J.</h4>
+                            <p>Member since 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "As someone who cares about sustainability, ReWear is a game-changer. I love knowing my clothes are getting a second life instead of ending up in landfill."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="David">
+                        <div class="author-info">
+                            <h4>David T.</h4>
+                            <p>Member since 2021</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-text">
+                        "The points system is brilliant - I've been able to get some amazing designer pieces just by listing items I wasn't wearing anymore."
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya">
+                        <div class="author-info">
+                            <h4>Priya M.</h4>
+                            <p>Member since 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section (from how-it-works.html) -->
+    <section id="how-it-works" class="features" style="padding-top: 60px;">
+        <div class="container">
+            <div class="section-title">
+                <h2>How ReWear Works</h2>
+                <p>Our simple process makes it easy to swap clothes and reduce fashion waste</p>
+            </div>
+            
+            <div class="swap-steps" style="margin-bottom: 60px;">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Create Your Account</h3>
+                    <p>Sign up for free and set up your profile. This allows you to list items and start swapping.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>List Your Items</h3>
+                    <p>Upload photos and details of clothing you no longer wear. Our community will see your listings.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Browse & Discover</h3>
+                    <p>Find items you love from other members. Filter by category, size, condition and more.</p>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2>Swap Options</h2>
+            </div>
+            
+            <div class="swap-options" style="margin-bottom: 60px;">
+                <div class="option-card">
+                    <div class="option-image">
+                        <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Direct Swap">
+                    </div>
+                    <div class="option-content">
+                        <h2>Direct Swap</h2>
+                        <p>Propose a 1:1 exchange with another member. They can accept, decline, or counter your offer.</p>
+                        <ul>
+                            <li>Perfect for items of similar value</li>
+                            <li>No points involved</li>
+                            <li>Great way to connect with other fashion lovers</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="option-card">
+                    <div class="option-image">
+                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Points Redemption">
+                    </div>
+                    <div class="option-content">
+                        <h2>Points System</h2>
+                        <p>Our flexible points system makes swapping fair and easy.</p>
+                        <ul>
+                            <li>Earn points when someone selects your items</li>
+                            <li>Redeem points for any available item</li>
+                            <li>No need to find a perfect 1:1 match</li>
+                            <li>Points values based on item quality and demand</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2>Exchange Process</h2>
+            </div>
+            
+            <div class="swap-steps">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Arrange Exchange</h3>
+                    <p>Once a swap is agreed, coordinate with the other member. Choose between local meetup or shipping.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Complete Swap</h3>
+                    <p>Confirm the exchange in the app. For shipped items, tracking helps ensure smooth delivery.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Rate & Review</h3>
+                    <p>Share your experience to help build our trusted community. Your feedback helps others.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section" style="margin-top: 60px;">
+                <h2>Ready to Get Started?</h2>
+                <p>Join our community of sustainable fashion enthusiasts today.</p>
+                <a href="#signup" class="btn">Sign Up Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Content -->
+    <section id="faq" class="faq-container">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 40px;">Frequently Asked Questions</h1>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does ReWear work?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>ReWear is a community clothing exchange platform where members can list items they no longer wear and swap them with other members. You can either arrange direct swaps (trading one item for another) or use our points system to redeem items.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Is there a cost to join ReWear?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, creating an account and listing items is completely free. We may offer premium features in the future, but the basic swapping functionality will always remain free.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How does the points system work?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>When you list an item, you assign it a point value. When another member selects your item, you earn those points. You can then use your points to redeem other items in the community. Points help facilitate swaps between items of different values.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What condition should items be in?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>All items should be in good, wearable condition with no major flaws. We encourage listing items you would be happy to receive yourself. Items should be clean and free from odors, stains, or damage.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do exchanges work?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>Members can arrange to meet locally for exchanges or ship items to each other. For shipped items, we recommend using tracking and keeping records of the exchange. The platform helps facilitate communication between members to arrange the details.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What if I have an issue with a swap?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>We encourage members to communicate directly to resolve any issues. If you're unable to resolve the issue, you can report it to our support team through the app. We may mediate disputes and take action against members who violate our community guidelines.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Can I sell items on ReWear?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    <p>No, ReWear is strictly for swapping and exchanging items. We do not allow cash transactions or sales through the platform. The focus is on sustainable fashion exchange rather than commerce.</p>
+                </div>
+            </div>
+            
+            <div class="cta-section" style="margin-top: 60px; text-align: center;">
+                <h2>Still have questions?</h2>
+                <p>Contact our support team and we'll be happy to help.</p>
+                <a href="#contact" class="btn">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section id="contact" class="contact-container">
+        <div class="container">
+            <h1 style="text-align: center; margin-bottom: 40px;">Contact Us</h1>
+            
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-method">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email</h4>
+                        <p>support@rewear.com</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>+1 (555) 123-4567</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Address</h4>
+                        <p>123 Sustainable Way<br>Eco City, EC 12345</p>
+                    </div>
+                </div>
+                <div class="contact-method">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Hours</h4>
+                        <p>Monday-Friday: 9am-5pm EST<br>Saturday: 10am-2pm EST</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send Us a Message</h3>
+                <form>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="contact-name">Name</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Email</label>
+                            <input type="email" id="contact-email" class="form-control" placeholder="Your email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Subject</label>
+                        <input type="text" id="contact-subject" class="form-control" placeholder="Subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" class="form-control" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admin Panel -->
+    <section id="admin" class="admin-panel">
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Admin Profile">
+                    <h3>Admin User</h3>
+                    <p>Administrator</p>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#admin" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#admin-items"><i class="fas fa-tshirt"></i> Item Moderation</a></li>
+                    <li><a href="#admin-users"><i class="fas fa-users"></i> User Management</a></li>
+                    <li><a href="#admin-reports"><i class="fas fa-flag"></i> Reports</a></li>
+                    <li><a href="#admin-settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="admin-content">
+                <h2>Item Moderation</h2>
+                <p>Review and approve or reject newly listed items.</p>
+                <table class="admin-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>User</th>
+                            <th>Date</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Vintage Denim Jacket</td>
+                            <td>Sarah J.</td>
+                            <td>2023-06-15</td>
+                            <td>Pending</td>
+                            <td>
+                                <div class="action-buttons-small">
+                                    <a href="#" class="btn"><i class="fas fa-check"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-times"></i></a>
+                                    <a href="#item-detail" class="btn-outline"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Floral Summer Dress</td>
+                            <td>Michael T.</td>
+                            <td>2023-06-14</td>
+                            <td>Pending</td>
+                            <td>
+                                <div class="action-buttons-small">
+                                    <a href="#" class="btn"><i class="fas fa-check"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-times"></i></a>
+                                    <a href="#item-detail" class="btn-outline"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Leather Ankle Boots</td>
+                            <td>Emma R.</td>
+                            <td>2023-06-13</td>
+                            <td>Approved</td>
+                            <td>
+                                <div class="action-buttons-small">
+                                    <a href="#" class="btn"><i class="fas fa-check"></i></a>
+                                    <a href="#" class="btn btn-danger"><i class="fas fa-times"></i></a>
+                                    <a href="#item-detail" class="btn-outline"><i class="fas fa-eye"></i></a>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="dashboard">
+        <div class="container">
+            <div class="sidebar">
+                <div class="profile-info">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Profile">
+                    <h3>Sarah Johnson</h3>
+                    <p>Member since June 2023</p>
+                </div>
+                <div class="points-balance">
+                    <h3>Your Points</h3>
+                    <p>1,250</p>
+                </div>
+                <ul class="sidebar-menu">
+                    <li><a href="#dashboard" class="active"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                    <li><a href="#my-items"><i class="fas fa-tshirt"></i> My Items</a></li>
+                    <li><a href="#swaps"><i class="fas fa-exchange-alt"></i> My Swaps</a></li>
+                    <li><a href="#wishlist"><i class="fas fa-heart"></i> Wishlist</a></li>
+                    <li><a href="#messages"><i class="fas fa-envelope"></i> Messages</a></li>
+                    <li><a href="#settings"><i class="fas fa-cog"></i> Settings</a></li>
+                    <li><a href="#logout"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="content-header">
+                    <h2>My Dashboard</h2>
+                    <a href="#add-item" class="btn"><i class="fas fa-plus"></i> List an Item</a>
+                </div>
+                <h3>My Listed Items</h3>
+                <div class="items-grid">
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Vintage Denim Jacket</h3>
+                            <div class="item-meta-small">
+                                <span>Size: M</span>
+                                <span>150 pts</span>
+                            </div>
+                            <span class="item-status status-available">Available</span>
+                        </div>
+                    </div>
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1529374255404-311a2a4f1fd9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Summer Dress">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Floral Summer Dress</h3>
+                            <div class="item-meta-small">
+                                <span>Size: S</span>
+                                <span>200 pts</span>
+                            </div>
+                            <span class="item-status status-pending">Pending Swap</span>
+                        </div>
+                    </div>
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1520367445093-50dc08a59d9d?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Leather Boots">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Leather Ankle Boots</h3>
+                            <div class="item-meta-small">
+                                <span>Size: 8</span>
+                                <span>250 pts</span>
+                            </div>
+                            <span class="item-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h3 style="margin-top: 40px;">Recent Swap Activity</h3>
+                <div class="items-grid">
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="White Shirt">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>White Button-Up Shirt</h3>
+                            <div class="item-meta-small">
+                                <span>Received from: Alex</span>
+                            </div>
+                            <span class="item-status status-completed">Completed</span>
+                        </div>
+                    </div>
+                    <div class="item-card-small">
+                        <div class="item-image-small">
+                            <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Black Jeans">
+                        </div>
+                        <div class="item-info-small">
+                            <h3>Slim Black Jeans</h3>
+                            <div class="item-meta-small">
+                                <span>Swap requested</span>
+                            </div>
+                            <span class="item-status status-pending">Pending</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Add Item Form -->
+    <section id="add-item" class="add-item">
+        <div class="container">
+            <div class="add-item-form">
+                <h2>List a New Item</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="images">Upload Images</label>
+                        <div class="image-upload">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                            <p>Click to browse or drag and drop images here</p>
+                            <input type="file" id="images" multiple style="display: none;">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="title">Item Title</label>
+                        <input type="text" id="title" class="form-control" placeholder="e.g. Vintage Denim Jacket">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea id="description" class="form-control" placeholder="Describe your item in detail including brand, material, condition, etc."></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="category">Category</label>
+                            <select id="category" class="form-control">
+                                <option value="">Select a category</option>
+                                <option value="tops">Tops</option>
+                                <option value="bottoms">Bottoms</option>
+                                <option value="dresses">Dresses</option>
+                                <option value="outerwear">Outerwear</option>
+                                <option value="shoes">Shoes</option>
+                                <option value="accessories">Accessories</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="type">Type</label>
+                            <select id="type" class="form-control">
+                                <option value="">Select a type</option>
+                                <option value="casual">Casual</option>
+                                <option value="formal">Formal</option>
+                                <option value="sportswear">Sportswear</option>
+                                <option value="vintage">Vintage</option>
+                                <option value="designer">Designer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="size">Size</label>
+                            <select id="size" class="form-control">
+                                <option value="">Select size</option>
+                                <option value="xs">XS</option>
+                                <option value="s">S</option>
+                                <option value="m">M</option>
+                                <option value="l">L</option>
+                                <option value="xl">XL</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Condition</label>
+                            <select id="condition" class="form-control">
+                                <option value="">Select condition</option>
+                                <option value="new">New with tags</option>
+                                <option value="excellent">Excellent</option>
+                                <option value="good">Good</option>
+                                <option value="fair">Fair</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="points">Points Value</label>
+                        <input type="number" id="points" class="form-control" placeholder="Enter points value for redemption">
+                    </div>
+                    <div class="form-group">
+                        <label for="tags">Tags (comma separated)</label>
+                        <input type="text" id="tags" class="form-control" placeholder="e.g. denim, jacket, vintage, levis">
+                    </div>
+                    <button type="submit" class="btn">List Item</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Item Detail -->
+    <section id="item-detail" class="item-detail">
+        <div class="container">
+            <div class="item-gallery">
+                <div class="main-image">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                </div>
+                <div class="thumbnail-container">
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket Back">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket Detail">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket Tag">
+                    </div>
+                </div>
+            </div>
+            <div class="item-info-detail">
+                <h1>Vintage Denim Jacket</h1>
+                <div class="item-meta-detail">
+                    <span>Category: Outerwear</span>
+                    <span>Size: M</span>
+                    <span>Condition: Excellent</span>
+                </div>
+                <div class="item-points" style="font-size: 24px; margin-bottom: 20px;">150 points</div>
+                <div class="item-description">
+                    <p>This vintage denim jacket is in excellent condition with minimal signs of wear. It features a classic trucker jacket design with button-front closure, chest pockets, and adjustable waist tabs. The denim has a medium wash with subtle fading for that perfect worn-in look.</p>
+                    <p>The jacket is made of 100% cotton and is unlined, making it perfect for layering in spring and fall. It fits true to size and would be perfect for someone who wears a medium.</p>
+                </div>
+                <div class="uploader-info">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Uploader">
+                    <div>
+                        <h4>Listed by Sarah</h4>
+                        <p>Member since June 2023</p>
+                        <p>12 items listed | 8 successful swaps</p>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <a href="#" class="btn"><i class="fas fa-exchange-alt"></i> Request Swap</a>
+                    <a href="#" class="btn-outline"><i class="fas fa-coins"></i> Redeem for 150 pts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Similar Items -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Similar Items</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Jacket">
+                            </div>
+                            <div class="item-info">
+                                <h3>Light Wash Denim Jacket</h3>
+                                <div class="item-meta">
+                                    <span>Size: L</span>
+                                    <span>Condition: Good</span>
+                                </div>
+                                <a href="#item-detail" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1604176354204-9268737828e4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Denim Shirt">
+                            </div>
+                            <div class="item-info">
+                                <h3>Denim Overshirt</h3>
+                                <div class="item-meta">
+                                    <span>Size: M</span>
+                                    <span>Condition: Excellent</span>
+                                </div>
+                                <a href="#item-detail" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="item-card">
+                            <div class="item-image">
+                                <img src="https://images.unsplash.com/photo-1602293589930-45aad59ba3ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80" alt="Corduroy Jacket">
+                            </div>
+                            <div class="item-info">
+                                <h3>Brown Corduroy Jacket</h3>
+                                <div class="item-meta">
+                                    <span>Size: S</span>
+                                    <span>Condition: Like New</span>
+                                </div>
+                                <a href="#item-detail" class="btn">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <div class="carousel-dot active"></div>
+                    <div class="carousel-dot"></div>
+                    <div class="carousel-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Form -->
+    <section id="login" class="auth-container">
+        <h1>Welcome Back</h1>
+        
+        <div class="social-login">
+            <button class="social-btn google">
+                <i class="fab fa-google"></i> Continue with Google
+            </button>
+            <button class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i> Continue with Facebook
+            </button>
+        </div>
+        
+        <div class="divider">or</div>
+        
+        <form>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Enter your password">
+            </div>
+            <div class="form-group">
+                <a href="#forgot-password" style="font-size: 14px;">Forgot password?</a>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Login</button>
+        </form>
+        
+        <div class="form-footer">
+            <p>Don't have an account? <a href="#signup">Sign up</a></p>
+        </div>
+    </section>
+
+    <!-- Signup Form -->
+    <section id="signup" class="auth-container">
+        <h1>Join ReWear</h1>
+        
+        <div class="social-login">
+            <button class="social-btn google">
+                <i class="fab fa-google"></i> Continue with Google
+            </button>
+            <button class="social-btn facebook">
+                <i class="fab fa-facebook-f"></i> Continue with Facebook
+            </button>
+        </div>
+        
+        <div class="divider">or</div>
+        
+        <form>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" class="form-control" placeholder="First name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" class="form-control" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" class="form-control" placeholder="Create a password">
+            </div>
+            <div class="form-group">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" class="form-control" placeholder="Confirm your password">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a></label>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Create Account</button>
+        </form>
+        
+        <div class="form-footer">
+            <p>Already have an account? <a href="#login">Log in</a></p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>About ReWear</h3>
+                    <p>ReWear is a community clothing exchange platform dedicated to promoting sustainable fashion and reducing textile waste.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#browse">Browse Items</a></li>
+                        <li><a href="#start-swapping">Start Swapping</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#terms">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 ReWear. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple carousel functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel');
+            const items = document.querySelectorAll('.carousel-item');
+            const dots = document.querySelectorAll('.carousel-dot');
+            let currentIndex = 0;
+            const itemCount = items.length;
+
+            function updateCarousel() {
+                if (carousel) {
+                    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+                }
+                
+                // Update dots
+                dots.forEach((dot, index) => {
+                    if (index === currentIndex) {
+                        dot.classList.add('active');
+                    } else {
+                        dot.classList.remove('active');
+                    }
+                });
+            }
+
+            // Dot click event
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    currentIndex = index;
+                    updateCarousel();
+                });
+            });
+
+            // Auto-rotate carousel
+            setInterval(() => {
+                currentIndex = (currentIndex + 1) % itemCount;
+                updateCarousel();
+            }, 5000);
+
+            // User profile dropdown
+            const userProfile = document.querySelector('.user-profile');
+            if (userProfile) {
+                const dropdown = userProfile.querySelector('.dropdown-menu');
+                
+                userProfile.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    dropdown.classList.toggle('show');
+                });
+
+                // Close dropdown when clicking outside
+                document.addEventListener('click', () => {
+                    dropdown.classList.remove('show');
+                });
+            }
+
+            // Image upload functionality (from add-item.html)
+            const imageUpload = document.querySelector('.image-upload');
+            if (imageUpload) {
+                const fileInput = imageUpload.querySelector('input[type="file"]');
+                
+                imageUpload.addEventListener('click', function() {
+                    fileInput.click();
+                });
+
+                fileInput.addEventListener('change', function(e) {
+                    if (e.target.files.length > 0) {
+                        imageUpload.innerHTML = `
+                            <i class="fas fa-check-circle"></i>
+                            <p>${e.target.files.length} image(s) selected</p>
+                        `;
+                    }
+                });
+            }
+
+            // Filter dropdown functionality (from browse.html)
+            const filterBtn = document.querySelector('.filter-btn');
+            const filterOptions = document.querySelector('.filter-options');
+            if (filterBtn && filterOptions) {
+                filterBtn.addEventListener('click', function() {
+                    filterOptions.classList.toggle('show');
+                });
+
+                // Close filter dropdown when clicking outside
+                document.addEventListener('click', function(e) {
+                    if (!e.target.closest('.filter-dropdown')) {
+                        filterOptions.classList.remove('show');
+                    }
+                });
+            }
+
+            // Contact form submission (from contact.html)
+            const contactForm = document.querySelector('.contact-form form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Thank you for your message! We will get back to you soon.');
+                    this.reset();
+                });
+            }
+
+            // FAQ accordion functionality (from faq.html)
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const icon = this.querySelector('i');
+                    
+                    answer.classList.toggle('show');
+                    
+                    if (answer.classList.contains('show')) {
+                        icon.style.transform = 'rotate(180deg)';
+                    } else {
+                        icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+
+            // Thumbnail gallery functionality (from item-detail.html)
+            const mainImage = document.querySelector('.item-gallery .main-image img');
+            const thumbnails = document.querySelectorAll('.thumbnail-container .thumbnail img');
+            if (mainImage && thumbnails.length > 0) {
+                thumbnails.forEach(thumb => {
+                    thumb.addEventListener('click', function() {
+                        mainImage.src = this.src;
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
